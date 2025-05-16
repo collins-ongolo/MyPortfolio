@@ -291,5 +291,143 @@ color: #131320;
     background-color: white;
     color: orange;
 }
+@media (max-width: 1024px) {
+    .home {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 40px;
+    }
 
+    .image-section .image-box {
+        width: 50vw;
+        height: 50vw;
+        margin-top: 20px;
+    }
+
+    .home .home-info h2 {
+        font-size: 28px;
+    }
+
+    .home .home-info h3 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navlink {
+        padding: 20px 5%;
+        position: relative;
+    }
+
+    .navlink ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 5%;
+        background-color: #131320;
+        width: 150px;
+        border: 1px solid orange;
+        border-radius: 8px;
+        z-index: 1000;
+    }
+
+    .navlink ul.nav-menu-visible {
+        display: flex;
+    }
+
+    .navlink ul li {
+        margin: 10px 0;
+    }
+
+    .navlink ul li a {
+        padding-left: 0;
+        font-size: 18px;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 30px;
+        color: orange;
+        cursor: pointer;
+    }
+
+    /* Hide social icons and arrange btn-group vertically */
+    .home .home-info .btn-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .image-section .image-box {
+        width: 70vw;
+        height: 70vw;
+        margin: 30px auto 0;
+    }
+
+    .home .home-info h1 {
+        font-size: 14px;
+    }
+
+    .home .home-info h2 {
+        font-size: 24px;
+    }
+
+    .home .home-info h3 {
+        font-size: 28px;
+    }
+
+    .home .home-info p {
+        font-size: 14px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience,
+    .education {
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navlink h1.logo {
+        font-size: 24px;
+    }
+
+    .navlink ul li a {
+        font-size: 16px;
+    }
+
+    .home .home-info h3 {
+        font-size: 24px;
+    }
+
+    .home .home-info p {
+        font-size: 13px;
+    }
+
+    .skill-card i {
+        font-size: 40px;
+    }
+}
 
